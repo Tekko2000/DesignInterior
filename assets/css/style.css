@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+}
+p{
+    font-family:'Work sans';
+    font-size:20px;
+    letter-spacing:2px;
+    word-spacing: 10px;
+    line-height:35px;
+    font-weight: 300;
+}
+h1{
+    font-family: 'Lora'
+}
+
+/* ANFANG HEADER */
+header{
+    display:flex;
+    justify-content:space-between
+}
+header > div{
+    padding:20% 0 0 8%;
+}
+header > div > h1{
+    font-size:120px;
+    margin: 0;
+    word-spacing: 20px;
+    font-weight:500;
+    padding-left: 9%;
+}
+header > div > p{
+    font-size:30px;
+    letter-spacing: 0;
+}
+
+/* ENDE HEADER */
+
+/* ANFANG MAIN + NAV + SECTION 1+2 */
+
+/* ANFANG NAV BAR */
+
+main > nav{
+    display:flex;
+    position:sticky;
+    width:100%;
+    bottom:0;
+    top:0;
+    background:#2e2e2e;
+    padding-top: 20px;
+}
+main > nav > ul {
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    padding-left:25%;
+    list-style:none;
+}
+main > nav > ul > li > a{
+    font-family: 'Work sans';
+}
+
+/* ENDE NAV BAR */
+
+/* ANFANG SECTION 1 */
+
+
+#sec1{
+    display:flex;
+    background: #2e2e2e;
+    padding-top:10%;
+}
+#sec1 > div > h1{
+    color:#fff;
+    font-size:50px;
+    font-weight:200;
+    padding-left: 30%;
+}
+#sec1 > div > p{
+    color:#fff;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+/* ENDE SECTION 1 */
+
+/* ANFANG SECTION 2 */
+
+#sec2{
+    text-align: center;
+    padding-top: 15%;
+}
+#sec2 > h1{
+    font-size:50px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+#sec2 > p{
+    padding:0 28% 80px 31%;
+    text-align: left;
+}
+.sec2_gallery{
+    display:grid;
+    grid-template-columns: 5% 27% 5% 27% 5% 27% 5% ;
+    padding-bottom: 50px;
+}
+.sec2_gallery > img:nth-of-type(1){
+    grid-column:2/3;
+}
+.sec2_gallery > img:nth-of-type(2){
+    grid-column:4/5;
+}
+.sec2_gallery > img:nth-of-type(3){
+    grid-column:6/7;
+}
+.sec2_gallery > p:nth-of-type(1){
+    grid-column:2/3;
+    grid-row: 2/3;
+    color:#1d2c2f;
+    margin: 0;
+    padding-right: 5%;
+}
+.sec2_gallery > p:nth-of-type(2){
+    grid-column:4/5;
+    grid-row: 2/3;
+    color:#1d2c2f;
+    margin: 0;
+}
+.sec2_gallery > p:nth-of-type(3){
+    grid-column:6/7;
+    grid-row: 2/3;
+    color:#1d2c2f;
+    margin: 0;
+}
+iframe{
+    padding-left: 1.2%;
+    padding-bottom: 10%;
+}
+
+/* ENDE SECTION 2 & MAIN */
+
+/* ANFANG FOOTER */
+
+footer{
+    padding: 10% 0 10% 0;
+    background: #2e2e2e;
+    color: #fff;
+    display: flex;
+}
+.text{
+    padding-left: 5%;
+    padding-right: 20%;
+}
+.text > h1{
+    font-weight: 400;
+}
+.form{
+    padding-right: 20%;
+}
+label{
+    font-size:35px;
+}
+input{
+    outline: none;
+    width:400px;
+    padding:10px;
+    text-align:left;
+    margin-bottom: 25px;
+}
+input:nth-of-type(4){
+    width:80px;
+    text-align:center;
+    font-weight:600;
+}
+ul{
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    background:rgb(29,44,47);
+    padding:30px 40px 30px 40px;
+    margin: 0;
+    font-family: 'Lora';
+    font-size:20px;
+}
+ul > li > a{
+    font-family: 'Lora';
+}
+
+
+
+
+
+
+
+
+
+/* ANFANG MEDIA QUERY MAX 768 PX */
+
+@media (max-width:768px){
+    header{
+        display:block;
+        text-align: center;
+    }
+    header > div{
+        padding: 0;
+    }
+    header > div > h1{
+        padding: 0;
+    }
+    #sec1{
+        display:block;
+    }
+    footer{
+        display:block;
+    }
+    .text{
+        padding-left: 10px;
+    }
+    /* ICH HAB ES NICHT HINBEKOMMEN DAS DER TEXT ÜBER DEN INPUT FELDERN AUCH DA BLEIBT */
+    ul{
+        display:block;
+    }
+}
+
+/* ENDE MEDIA QUERY MAX 786PX */
+
+/* ANFANG MEDIA QUERY MAX 425PX */
+
+@media (max-width:425px){
+    header{
+        display:block;
+        text-align:center;
+    }
+    header > div > h1{
+        font-size:70px;
+    }
+    header > div > p{
+        word-spacing: 0;
+        font-size:28px;
+    }
+    main > nav > ul {
+        display:block;
+        padding-left:45%;
+    }
+    #sec1 > .sec1{
+        display:block;
+        text-align:center;
+    }
+    #sec1 > .sec1 > h1{
+        padding: 0;
+    }
+    .sec2_gallery{
+        display:block;
+    }
+    iframe{
+        width:425px;
+    }
+    footer{
+        display:block;
+        padding:0;
+    }
+    .text{
+        text-align: center;
+        padding: 0;
+    }
+    form > label{
+        text-align: left;
+    }
+    ul{
+        display:block;
+        padding: 0;
+    }
+}
+
+/* ENDE MEDIA QUERY MAX 425PX */
